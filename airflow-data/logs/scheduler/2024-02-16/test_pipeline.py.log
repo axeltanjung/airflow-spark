@@ -1,0 +1,446 @@
+[2024-02-16 13:27:50,543] {processor.py:153} INFO - Started process (PID=169) to work on /opt/airflow/dags/test_pipeline.py
+[2024-02-16 13:27:50,575] {processor.py:641} INFO - Processing file /opt/airflow/dags/test_pipeline.py for tasks to queue
+[2024-02-16 13:27:50,597] {logging_mixin.py:115} INFO - [2024-02-16 13:27:50,597] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/test_pipeline.py
+[2024-02-16 13:27:51,432] {logging_mixin.py:115} INFO - [2024-02-16 13:27:51,388] {dagbag.py:320} ERROR - Failed to import: /opt/airflow/dags/test_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 317, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/test_pipeline.py", line 20, in <module>
+    dag = dag
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 373, in apply_defaults
+    raise AirflowException(f"missing keyword argument {missing_args.pop()!r}")
+airflow.exceptions.AirflowException: missing keyword argument 'python_callable'
+[2024-02-16 13:27:51,441] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/test_pipeline.py
+[2024-02-16 13:27:52,232] {processor.py:161} INFO - Processing /opt/airflow/dags/test_pipeline.py took 1.813 seconds
+[2024-02-16 13:28:05,472] {processor.py:153} INFO - Started process (PID=175) to work on /opt/airflow/dags/test_pipeline.py
+[2024-02-16 13:28:05,487] {processor.py:641} INFO - Processing file /opt/airflow/dags/test_pipeline.py for tasks to queue
+[2024-02-16 13:28:05,494] {logging_mixin.py:115} INFO - [2024-02-16 13:28:05,493] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/test_pipeline.py
+[2024-02-16 13:28:05,639] {logging_mixin.py:115} INFO - [2024-02-16 13:28:05,615] {dagbag.py:320} ERROR - Failed to import: /opt/airflow/dags/test_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 317, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 724, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 860, in get_code
+  File "<frozen importlib._bootstrap_external>", line 791, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/test_pipeline.py", line 9
+    def
+      ^
+SyntaxError: invalid syntax
+[2024-02-16 13:28:05,643] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/test_pipeline.py
+[2024-02-16 13:28:06,205] {processor.py:161} INFO - Processing /opt/airflow/dags/test_pipeline.py took 0.850 seconds
+[2024-02-16 13:28:29,476] {processor.py:153} INFO - Started process (PID=180) to work on /opt/airflow/dags/test_pipeline.py
+[2024-02-16 13:28:29,515] {processor.py:641} INFO - Processing file /opt/airflow/dags/test_pipeline.py for tasks to queue
+[2024-02-16 13:28:29,540] {logging_mixin.py:115} INFO - [2024-02-16 13:28:29,539] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/test_pipeline.py
+[2024-02-16 13:28:53,451] {logging_mixin.py:115} INFO - [2024-02-16 13:28:53,418] {dagbag.py:320} ERROR - Failed to import: /opt/airflow/dags/test_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 317, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/test_pipeline.py", line 25, in <module>
+    dag = dag
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 373, in apply_defaults
+    raise AirflowException(f"missing keyword argument {missing_args.pop()!r}")
+airflow.exceptions.AirflowException: missing keyword argument 'python_callable'
+[2024-02-16 13:28:53,456] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/test_pipeline.py
+[2024-02-16 13:28:54,148] {processor.py:161} INFO - Processing /opt/airflow/dags/test_pipeline.py took 24.911 seconds
+[2024-02-16 13:29:25,796] {processor.py:153} INFO - Started process (PID=186) to work on /opt/airflow/dags/test_pipeline.py
+[2024-02-16 13:29:25,807] {processor.py:641} INFO - Processing file /opt/airflow/dags/test_pipeline.py for tasks to queue
+[2024-02-16 13:29:25,819] {logging_mixin.py:115} INFO - [2024-02-16 13:29:25,815] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/test_pipeline.py
+[2024-02-16 13:29:31,081] {logging_mixin.py:115} INFO - [2024-02-16 13:29:31,021] {dagbag.py:320} ERROR - Failed to import: /opt/airflow/dags/test_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 317, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/test_pipeline.py", line 25, in <module>
+    dag = dag
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 373, in apply_defaults
+    raise AirflowException(f"missing keyword argument {missing_args.pop()!r}")
+airflow.exceptions.AirflowException: missing keyword argument 'python_callable'
+[2024-02-16 13:29:31,109] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/test_pipeline.py
+[2024-02-16 13:29:31,631] {processor.py:161} INFO - Processing /opt/airflow/dags/test_pipeline.py took 5.930 seconds
+[2024-02-16 13:30:03,571] {processor.py:153} INFO - Started process (PID=192) to work on /opt/airflow/dags/test_pipeline.py
+[2024-02-16 13:30:03,664] {processor.py:641} INFO - Processing file /opt/airflow/dags/test_pipeline.py for tasks to queue
+[2024-02-16 13:30:03,745] {logging_mixin.py:115} INFO - [2024-02-16 13:30:03,731] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/test_pipeline.py
+[2024-02-16 13:30:35,206] {logging_mixin.py:115} INFO - [2024-02-16 13:30:34,099] {timeout.py:67} ERROR - Process timed out, PID: 192
+[2024-02-16 13:30:37,767] {logging_mixin.py:115} INFO - [2024-02-16 13:30:35,764] {dagbag.py:320} ERROR - Failed to import: /opt/airflow/dags/test_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 317, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/test_pipeline.py", line 6, in <module>
+    import pandas as pd
+  File "/home/airflow/.local/lib/python3.7/site-packages/pandas/__init__.py", line 50, in <module>
+    from pandas.core.api import (
+  File "/home/airflow/.local/lib/python3.7/site-packages/pandas/core/api.py", line 48, in <module>
+    from pandas.core.groupby import (
+  File "/home/airflow/.local/lib/python3.7/site-packages/pandas/core/groupby/__init__.py", line 1, in <module>
+    from pandas.core.groupby.generic import (
+  File "/home/airflow/.local/lib/python3.7/site-packages/pandas/core/groupby/generic.py", line 73, in <module>
+    from pandas.core.frame import DataFrame
+  File "/home/airflow/.local/lib/python3.7/site-packages/pandas/core/frame.py", line 129, in <module>
+    from pandas.core import (
+  File "/home/airflow/.local/lib/python3.7/site-packages/pandas/core/generic.py", line 144, in <module>
+    from pandas.core.window import (
+  File "/home/airflow/.local/lib/python3.7/site-packages/pandas/core/window/__init__.py", line 1, in <module>
+    from pandas.core.window.ewm import (  # noqa:F401
+  File "/home/airflow/.local/lib/python3.7/site-packages/pandas/core/window/ewm.py", line 27, in <module>
+    from pandas.core.window.doc import (
+  File "<frozen importlib._bootstrap>", line 983, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 967, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 677, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 724, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 818, in get_code
+  File "<frozen importlib._bootstrap_external>", line 917, in get_data
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/timeout.py", line 68, in handle_timeout
+    raise AirflowTaskTimeout(self.error_message)
+airflow.exceptions.AirflowTaskTimeout: DagBag import timeout for /opt/airflow/dags/test_pipeline.py after 30.0s.
+Please take a look at these docs to improve your DAG import time:
+* https://airflow.apache.org/docs/apache-airflow/2.3.0/best-practices.html#top-level-python-code
+* https://airflow.apache.org/docs/apache-airflow/2.3.0/best-practices.html#reducing-dag-complexity, PID: 192
+[2024-02-16 13:30:38,779] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/test_pipeline.py
+[2024-02-16 13:30:48,793] {processor.py:161} INFO - Processing /opt/airflow/dags/test_pipeline.py took 45.639 seconds
+[2024-02-16 13:30:56,736] {processor.py:153} INFO - Started process (PID=198) to work on /opt/airflow/dags/test_pipeline.py
+[2024-02-16 13:30:56,933] {processor.py:641} INFO - Processing file /opt/airflow/dags/test_pipeline.py for tasks to queue
+[2024-02-16 13:30:57,144] {logging_mixin.py:115} INFO - [2024-02-16 13:30:57,131] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/test_pipeline.py
+[2024-02-16 13:31:27,467] {logging_mixin.py:115} INFO - [2024-02-16 13:31:27,379] {timeout.py:67} ERROR - Process timed out, PID: 198
+[2024-02-16 13:31:28,131] {logging_mixin.py:115} INFO - [2024-02-16 13:31:27,487] {dagbag.py:320} ERROR - Failed to import: /opt/airflow/dags/test_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 317, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/test_pipeline.py", line 6, in <module>
+    import pandas as pd
+  File "/home/airflow/.local/lib/python3.7/site-packages/pandas/__init__.py", line 50, in <module>
+    from pandas.core.api import (
+  File "/home/airflow/.local/lib/python3.7/site-packages/pandas/core/api.py", line 48, in <module>
+    from pandas.core.groupby import (
+  File "/home/airflow/.local/lib/python3.7/site-packages/pandas/core/groupby/__init__.py", line 1, in <module>
+    from pandas.core.groupby.generic import (
+  File "/home/airflow/.local/lib/python3.7/site-packages/pandas/core/groupby/generic.py", line 73, in <module>
+    from pandas.core.frame import DataFrame
+  File "/home/airflow/.local/lib/python3.7/site-packages/pandas/core/frame.py", line 129, in <module>
+    from pandas.core import (
+  File "/home/airflow/.local/lib/python3.7/site-packages/pandas/core/generic.py", line 122, in <module>
+    from pandas.core.describe import describe_ndframe
+  File "/home/airflow/.local/lib/python3.7/site-packages/pandas/core/describe.py", line 37, in <module>
+    from pandas.core.reshape.concat import concat
+  File "/home/airflow/.local/lib/python3.7/site-packages/pandas/core/reshape/concat.py", line 45, in <module>
+    from pandas.core.internals import concatenate_managers
+  File "/home/airflow/.local/lib/python3.7/site-packages/pandas/core/internals/__init__.py", line 1, in <module>
+    from pandas.core.internals.api import make_block  # pseudo-public version
+  File "/home/airflow/.local/lib/python3.7/site-packages/pandas/core/internals/api.py", line 13, in <module>
+    from pandas._libs.internals import BlockPlacement
+  File "<frozen importlib._bootstrap>", line 983, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 963, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 906, in _find_spec
+  File "<frozen importlib._bootstrap_external>", line 1280, in find_spec
+  File "<frozen importlib._bootstrap_external>", line 1252, in _get_spec
+  File "<frozen importlib._bootstrap_external>", line 1394, in find_spec
+  File "<frozen importlib._bootstrap_external>", line 95, in _path_isfile
+  File "<frozen importlib._bootstrap_external>", line 87, in _path_is_mode_type
+  File "<frozen importlib._bootstrap_external>", line 81, in _path_stat
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/timeout.py", line 68, in handle_timeout
+    raise AirflowTaskTimeout(self.error_message)
+airflow.exceptions.AirflowTaskTimeout: DagBag import timeout for /opt/airflow/dags/test_pipeline.py after 30.0s.
+Please take a look at these docs to improve your DAG import time:
+* https://airflow.apache.org/docs/apache-airflow/2.3.0/best-practices.html#top-level-python-code
+* https://airflow.apache.org/docs/apache-airflow/2.3.0/best-practices.html#reducing-dag-complexity, PID: 198
+[2024-02-16 13:31:28,392] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/test_pipeline.py
+[2024-02-16 13:31:30,134] {processor.py:161} INFO - Processing /opt/airflow/dags/test_pipeline.py took 34.511 seconds
+[2024-02-16 13:31:47,092] {processor.py:153} INFO - Started process (PID=204) to work on /opt/airflow/dags/test_pipeline.py
+[2024-02-16 13:31:47,213] {processor.py:641} INFO - Processing file /opt/airflow/dags/test_pipeline.py for tasks to queue
+[2024-02-16 13:31:47,250] {logging_mixin.py:115} INFO - [2024-02-16 13:31:47,245] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/test_pipeline.py
+[2024-02-16 13:32:01,894] {logging_mixin.py:115} INFO - [2024-02-16 13:32:01,853] {dagbag.py:320} ERROR - Failed to import: /opt/airflow/dags/test_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 317, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/test_pipeline.py", line 25, in <module>
+    dag = dag
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 373, in apply_defaults
+    raise AirflowException(f"missing keyword argument {missing_args.pop()!r}")
+airflow.exceptions.AirflowException: missing keyword argument 'python_callable'
+[2024-02-16 13:32:01,897] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/test_pipeline.py
+[2024-02-16 13:32:02,567] {processor.py:161} INFO - Processing /opt/airflow/dags/test_pipeline.py took 15.795 seconds
+[2024-02-16 13:32:12,271] {processor.py:153} INFO - Started process (PID=210) to work on /opt/airflow/dags/test_pipeline.py
+[2024-02-16 13:32:12,308] {processor.py:641} INFO - Processing file /opt/airflow/dags/test_pipeline.py for tasks to queue
+[2024-02-16 13:32:12,373] {logging_mixin.py:115} INFO - [2024-02-16 13:32:12,366] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/test_pipeline.py
+[2024-02-16 13:32:41,273] {logging_mixin.py:115} INFO - [2024-02-16 13:32:41,186] {dagbag.py:320} ERROR - Failed to import: /opt/airflow/dags/test_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 317, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/test_pipeline.py", line 26, in <module>
+    dag = dag
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 373, in apply_defaults
+    raise AirflowException(f"missing keyword argument {missing_args.pop()!r}")
+airflow.exceptions.AirflowException: missing keyword argument 'python_callable'
+[2024-02-16 13:32:41,292] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/test_pipeline.py
+[2024-02-16 13:32:42,476] {processor.py:161} INFO - Processing /opt/airflow/dags/test_pipeline.py took 30.575 seconds
+[2024-02-16 13:33:01,222] {processor.py:153} INFO - Started process (PID=216) to work on /opt/airflow/dags/test_pipeline.py
+[2024-02-16 13:33:01,233] {processor.py:641} INFO - Processing file /opt/airflow/dags/test_pipeline.py for tasks to queue
+[2024-02-16 13:33:01,244] {logging_mixin.py:115} INFO - [2024-02-16 13:33:01,243] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/test_pipeline.py
+[2024-02-16 13:33:18,483] {logging_mixin.py:115} INFO - [2024-02-16 13:33:18,415] {dagbag.py:320} ERROR - Failed to import: /opt/airflow/dags/test_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 317, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/test_pipeline.py", line 30, in <module>
+    dag = dag
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 373, in apply_defaults
+    raise AirflowException(f"missing keyword argument {missing_args.pop()!r}")
+airflow.exceptions.AirflowException: missing keyword argument 'python_callable'
+[2024-02-16 13:33:18,486] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/test_pipeline.py
+[2024-02-16 13:33:19,239] {processor.py:161} INFO - Processing /opt/airflow/dags/test_pipeline.py took 18.131 seconds
+[2024-02-16 13:33:51,197] {processor.py:153} INFO - Started process (PID=222) to work on /opt/airflow/dags/test_pipeline.py
+[2024-02-16 13:33:51,206] {processor.py:641} INFO - Processing file /opt/airflow/dags/test_pipeline.py for tasks to queue
+[2024-02-16 13:33:51,231] {logging_mixin.py:115} INFO - [2024-02-16 13:33:51,230] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/test_pipeline.py
+[2024-02-16 13:34:07,726] {logging_mixin.py:115} INFO - [2024-02-16 13:34:07,590] {dagbag.py:320} ERROR - Failed to import: /opt/airflow/dags/test_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 317, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/test_pipeline.py", line 30, in <module>
+    dag = dag
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 373, in apply_defaults
+    raise AirflowException(f"missing keyword argument {missing_args.pop()!r}")
+airflow.exceptions.AirflowException: missing keyword argument 'python_callable'
+[2024-02-16 13:34:07,767] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/test_pipeline.py
+[2024-02-16 13:34:09,618] {processor.py:161} INFO - Processing /opt/airflow/dags/test_pipeline.py took 18.828 seconds
+[2024-02-16 13:34:42,834] {processor.py:153} INFO - Started process (PID=228) to work on /opt/airflow/dags/test_pipeline.py
+[2024-02-16 13:34:42,862] {processor.py:641} INFO - Processing file /opt/airflow/dags/test_pipeline.py for tasks to queue
+[2024-02-16 13:34:42,923] {logging_mixin.py:115} INFO - [2024-02-16 13:34:42,920] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/test_pipeline.py
+[2024-02-16 13:34:50,603] {logging_mixin.py:115} INFO - [2024-02-16 13:34:50,516] {dagbag.py:320} ERROR - Failed to import: /opt/airflow/dags/test_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 317, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/test_pipeline.py", line 30, in <module>
+    dag = dag
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 373, in apply_defaults
+    raise AirflowException(f"missing keyword argument {missing_args.pop()!r}")
+airflow.exceptions.AirflowException: missing keyword argument 'python_callable'
+[2024-02-16 13:34:50,629] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/test_pipeline.py
+[2024-02-16 13:34:51,175] {processor.py:161} INFO - Processing /opt/airflow/dags/test_pipeline.py took 8.766 seconds
+[2024-02-16 13:35:16,997] {processor.py:153} INFO - Started process (PID=234) to work on /opt/airflow/dags/test_pipeline.py
+[2024-02-16 13:35:17,011] {processor.py:641} INFO - Processing file /opt/airflow/dags/test_pipeline.py for tasks to queue
+[2024-02-16 13:35:17,027] {logging_mixin.py:115} INFO - [2024-02-16 13:35:17,026] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/test_pipeline.py
+[2024-02-16 13:35:30,754] {logging_mixin.py:115} INFO - [2024-02-16 13:35:30,647] {dagbag.py:320} ERROR - Failed to import: /opt/airflow/dags/test_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 317, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/test_pipeline.py", line 33, in <module>
+    dag = dag
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 373, in apply_defaults
+    raise AirflowException(f"missing keyword argument {missing_args.pop()!r}")
+airflow.exceptions.AirflowException: missing keyword argument 'python_callable'
+[2024-02-16 13:35:30,761] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/test_pipeline.py
+[2024-02-16 13:35:31,790] {processor.py:161} INFO - Processing /opt/airflow/dags/test_pipeline.py took 14.828 seconds
+[2024-02-16 13:36:04,727] {processor.py:153} INFO - Started process (PID=240) to work on /opt/airflow/dags/test_pipeline.py
+[2024-02-16 13:36:04,799] {processor.py:641} INFO - Processing file /opt/airflow/dags/test_pipeline.py for tasks to queue
+[2024-02-16 13:36:04,821] {logging_mixin.py:115} INFO - [2024-02-16 13:36:04,820] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/test_pipeline.py
+[2024-02-16 13:36:15,964] {logging_mixin.py:115} INFO - [2024-02-16 13:36:15,832] {dagbag.py:320} ERROR - Failed to import: /opt/airflow/dags/test_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 317, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/test_pipeline.py", line 33, in <module>
+    dag = dag
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 373, in apply_defaults
+    raise AirflowException(f"missing keyword argument {missing_args.pop()!r}")
+airflow.exceptions.AirflowException: missing keyword argument 'python_callable'
+[2024-02-16 13:36:15,979] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/test_pipeline.py
+[2024-02-16 13:36:16,792] {processor.py:161} INFO - Processing /opt/airflow/dags/test_pipeline.py took 12.245 seconds
+[2024-02-16 13:36:47,702] {processor.py:153} INFO - Started process (PID=246) to work on /opt/airflow/dags/test_pipeline.py
+[2024-02-16 13:36:47,708] {processor.py:641} INFO - Processing file /opt/airflow/dags/test_pipeline.py for tasks to queue
+[2024-02-16 13:36:47,721] {logging_mixin.py:115} INFO - [2024-02-16 13:36:47,720] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/test_pipeline.py
+[2024-02-16 13:36:52,948] {logging_mixin.py:115} INFO - [2024-02-16 13:36:52,878] {dagbag.py:320} ERROR - Failed to import: /opt/airflow/dags/test_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 317, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/test_pipeline.py", line 33, in <module>
+    dag = dag
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 373, in apply_defaults
+    raise AirflowException(f"missing keyword argument {missing_args.pop()!r}")
+airflow.exceptions.AirflowException: missing keyword argument 'python_callable'
+[2024-02-16 13:36:52,969] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/test_pipeline.py
+[2024-02-16 13:36:53,432] {processor.py:161} INFO - Processing /opt/airflow/dags/test_pipeline.py took 5.813 seconds
+[2024-02-16 13:37:26,063] {processor.py:153} INFO - Started process (PID=252) to work on /opt/airflow/dags/test_pipeline.py
+[2024-02-16 13:37:26,074] {processor.py:641} INFO - Processing file /opt/airflow/dags/test_pipeline.py for tasks to queue
+[2024-02-16 13:37:26,089] {logging_mixin.py:115} INFO - [2024-02-16 13:37:26,088] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/test_pipeline.py
+[2024-02-16 13:37:35,506] {logging_mixin.py:115} INFO - [2024-02-16 13:37:35,451] {dagbag.py:320} ERROR - Failed to import: /opt/airflow/dags/test_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 317, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/test_pipeline.py", line 33, in <module>
+    dag = dag
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 373, in apply_defaults
+    raise AirflowException(f"missing keyword argument {missing_args.pop()!r}")
+airflow.exceptions.AirflowException: missing keyword argument 'python_callable'
+[2024-02-16 13:37:35,510] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/test_pipeline.py
+[2024-02-16 13:37:36,121] {processor.py:161} INFO - Processing /opt/airflow/dags/test_pipeline.py took 10.305 seconds
+[2024-02-16 13:37:57,204] {processor.py:153} INFO - Started process (PID=258) to work on /opt/airflow/dags/test_pipeline.py
+[2024-02-16 13:37:57,208] {processor.py:641} INFO - Processing file /opt/airflow/dags/test_pipeline.py for tasks to queue
+[2024-02-16 13:37:57,213] {logging_mixin.py:115} INFO - [2024-02-16 13:37:57,213] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/test_pipeline.py
+[2024-02-16 13:38:03,476] {logging_mixin.py:115} INFO - [2024-02-16 13:38:03,343] {dagbag.py:320} ERROR - Failed to import: /opt/airflow/dags/test_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 317, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/test_pipeline.py", line 37, in <module>
+    dag = dag
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 373, in apply_defaults
+    raise AirflowException(f"missing keyword argument {missing_args.pop()!r}")
+airflow.exceptions.AirflowException: missing keyword argument 'python_callable'
+[2024-02-16 13:38:03,494] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/test_pipeline.py
+[2024-02-16 13:38:04,075] {processor.py:161} INFO - Processing /opt/airflow/dags/test_pipeline.py took 6.901 seconds
+[2024-02-16 13:38:08,741] {processor.py:153} INFO - Started process (PID=264) to work on /opt/airflow/dags/test_pipeline.py
+[2024-02-16 13:38:08,757] {processor.py:641} INFO - Processing file /opt/airflow/dags/test_pipeline.py for tasks to queue
+[2024-02-16 13:38:08,767] {logging_mixin.py:115} INFO - [2024-02-16 13:38:08,766] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/test_pipeline.py
+[2024-02-16 13:38:13,415] {logging_mixin.py:115} INFO - [2024-02-16 13:38:13,405] {dagbag.py:320} ERROR - Failed to import: /opt/airflow/dags/test_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 317, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/test_pipeline.py", line 35, in <module>
+    dag = dag
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 373, in apply_defaults
+    raise AirflowException(f"missing keyword argument {missing_args.pop()!r}")
+airflow.exceptions.AirflowException: missing keyword argument 'python_callable'
+[2024-02-16 13:38:13,418] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/test_pipeline.py
+[2024-02-16 13:38:13,561] {processor.py:161} INFO - Processing /opt/airflow/dags/test_pipeline.py took 4.856 seconds
+[2024-02-16 13:38:47,229] {processor.py:153} INFO - Started process (PID=270) to work on /opt/airflow/dags/test_pipeline.py
+[2024-02-16 13:38:47,260] {processor.py:641} INFO - Processing file /opt/airflow/dags/test_pipeline.py for tasks to queue
+[2024-02-16 13:38:47,280] {logging_mixin.py:115} INFO - [2024-02-16 13:38:47,277] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/test_pipeline.py
+[2024-02-16 13:38:54,009] {logging_mixin.py:115} INFO - [2024-02-16 13:38:53,975] {dagbag.py:320} ERROR - Failed to import: /opt/airflow/dags/test_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 317, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/test_pipeline.py", line 35, in <module>
+    dag = dag
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 373, in apply_defaults
+    raise AirflowException(f"missing keyword argument {missing_args.pop()!r}")
+airflow.exceptions.AirflowException: missing keyword argument 'python_callable'
+[2024-02-16 13:38:54,015] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/test_pipeline.py
+[2024-02-16 13:38:54,389] {processor.py:161} INFO - Processing /opt/airflow/dags/test_pipeline.py took 7.294 seconds
+[2024-02-16 13:38:57,209] {processor.py:153} INFO - Started process (PID=276) to work on /opt/airflow/dags/test_pipeline.py
+[2024-02-16 13:38:57,214] {processor.py:641} INFO - Processing file /opt/airflow/dags/test_pipeline.py for tasks to queue
+[2024-02-16 13:38:57,219] {logging_mixin.py:115} INFO - [2024-02-16 13:38:57,218] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/test_pipeline.py
+[2024-02-16 13:38:57,291] {logging_mixin.py:115} INFO - [2024-02-16 13:38:57,281] {dagbag.py:320} ERROR - Failed to import: /opt/airflow/dags/test_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 317, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 724, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 860, in get_code
+  File "<frozen importlib._bootstrap_external>", line 791, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/test_pipeline.py", line 48
+    dag = dag
+      ^
+SyntaxError: invalid syntax
+[2024-02-16 13:38:57,294] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/test_pipeline.py
+[2024-02-16 13:38:57,690] {processor.py:161} INFO - Processing /opt/airflow/dags/test_pipeline.py took 0.544 seconds
+[2024-02-16 13:49:00,463] {processor.py:153} INFO - Started process (PID=171) to work on /opt/airflow/dags/test_pipeline.py
+[2024-02-16 13:49:00,533] {processor.py:641} INFO - Processing file /opt/airflow/dags/test_pipeline.py for tasks to queue
+[2024-02-16 13:49:00,556] {logging_mixin.py:115} INFO - [2024-02-16 13:49:00,555] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/test_pipeline.py
+[2024-02-16 13:49:27,594] {processor.py:651} INFO - DAG(s) dict_keys(['test_pipeline']) retrieved from /opt/airflow/dags/test_pipeline.py
+[2024-02-16 13:49:29,748] {logging_mixin.py:115} INFO - [2024-02-16 13:49:29,740] {manager.py:508} INFO - Created Permission View: can edit on DAG:test_pipeline
+[2024-02-16 13:49:29,887] {logging_mixin.py:115} INFO - [2024-02-16 13:49:29,887] {manager.py:508} INFO - Created Permission View: can delete on DAG:test_pipeline
+[2024-02-16 13:49:29,949] {logging_mixin.py:115} INFO - [2024-02-16 13:49:29,948] {manager.py:508} INFO - Created Permission View: can read on DAG:test_pipeline
+[2024-02-16 13:49:29,969] {logging_mixin.py:115} INFO - [2024-02-16 13:49:29,954] {dag.py:2371} INFO - Sync 1 DAGs
+[2024-02-16 13:49:30,047] {logging_mixin.py:115} INFO - [2024-02-16 13:49:30,046] {dag.py:2390} INFO - Creating ORM DAG for test_pipeline
+[2024-02-16 13:49:30,143] {logging_mixin.py:115} INFO - [2024-02-16 13:49:30,142] {dag.py:2919} INFO - Setting next_dagrun for test_pipeline to 2024-02-14T07:05:00+00:00, run_after=2024-02-15T07:05:00+00:00
+[2024-02-16 13:49:30,623] {processor.py:161} INFO - Processing /opt/airflow/dags/test_pipeline.py took 30.429 seconds
+[2024-02-16 13:50:02,538] {processor.py:153} INFO - Started process (PID=186) to work on /opt/airflow/dags/test_pipeline.py
+[2024-02-16 13:50:02,544] {processor.py:641} INFO - Processing file /opt/airflow/dags/test_pipeline.py for tasks to queue
+[2024-02-16 13:50:02,552] {logging_mixin.py:115} INFO - [2024-02-16 13:50:02,551] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/test_pipeline.py
+[2024-02-16 13:50:15,737] {processor.py:651} INFO - DAG(s) dict_keys(['test_pipeline']) retrieved from /opt/airflow/dags/test_pipeline.py
+[2024-02-16 13:50:16,149] {logging_mixin.py:115} INFO - [2024-02-16 13:50:16,133] {dag.py:2371} INFO - Sync 1 DAGs
+[2024-02-16 13:50:16,501] {logging_mixin.py:115} INFO - [2024-02-16 13:50:16,500] {dag.py:2919} INFO - Setting next_dagrun for test_pipeline to 2024-02-14T07:05:00+00:00, run_after=2024-02-15T07:05:00+00:00
+[2024-02-16 13:50:16,580] {processor.py:161} INFO - Processing /opt/airflow/dags/test_pipeline.py took 14.115 seconds
+[2024-02-16 13:50:49,183] {processor.py:153} INFO - Started process (PID=200) to work on /opt/airflow/dags/test_pipeline.py
+[2024-02-16 13:50:49,249] {processor.py:641} INFO - Processing file /opt/airflow/dags/test_pipeline.py for tasks to queue
+[2024-02-16 13:50:49,283] {logging_mixin.py:115} INFO - [2024-02-16 13:50:49,281] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/test_pipeline.py
+[2024-02-16 13:51:50,384] {processor.py:153} INFO - Started process (PID=209) to work on /opt/airflow/dags/test_pipeline.py
+[2024-02-16 13:51:50,431] {processor.py:641} INFO - Processing file /opt/airflow/dags/test_pipeline.py for tasks to queue
+[2024-02-16 13:51:50,483] {logging_mixin.py:115} INFO - [2024-02-16 13:51:50,478] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/test_pipeline.py
+[2024-02-16 13:52:03,407] {processor.py:651} INFO - DAG(s) dict_keys(['test_pipeline']) retrieved from /opt/airflow/dags/test_pipeline.py
+[2024-02-16 13:52:04,305] {logging_mixin.py:115} INFO - [2024-02-16 13:52:04,276] {dag.py:2371} INFO - Sync 1 DAGs
+[2024-02-16 13:52:05,640] {logging_mixin.py:115} INFO - [2024-02-16 13:52:05,639] {dag.py:2919} INFO - Setting next_dagrun for test_pipeline to 2024-02-14T07:05:00+00:00, run_after=2024-02-15T07:05:00+00:00
+[2024-02-16 13:52:07,639] {processor.py:161} INFO - Processing /opt/airflow/dags/test_pipeline.py took 17.536 seconds
+[2024-02-16 13:52:14,015] {processor.py:153} INFO - Started process (PID=222) to work on /opt/airflow/dags/test_pipeline.py
+[2024-02-16 13:52:14,031] {processor.py:641} INFO - Processing file /opt/airflow/dags/test_pipeline.py for tasks to queue
+[2024-02-16 13:52:14,049] {logging_mixin.py:115} INFO - [2024-02-16 13:52:14,047] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/test_pipeline.py
+[2024-02-16 13:52:36,358] {processor.py:651} INFO - DAG(s) dict_keys(['test_pipeline']) retrieved from /opt/airflow/dags/test_pipeline.py
+[2024-02-16 13:52:41,301] {logging_mixin.py:115} INFO - [2024-02-16 13:52:41,263] {dag.py:2371} INFO - Sync 1 DAGs
+[2024-02-16 13:52:41,821] {logging_mixin.py:115} INFO - [2024-02-16 13:52:41,820] {dag.py:2919} INFO - Setting next_dagrun for test_pipeline to 2024-02-14T07:05:00+00:00, run_after=2024-02-15T07:05:00+00:00
+[2024-02-16 13:52:42,144] {processor.py:161} INFO - Processing /opt/airflow/dags/test_pipeline.py took 29.071 seconds
+[2024-02-16 13:53:13,810] {processor.py:153} INFO - Started process (PID=233) to work on /opt/airflow/dags/test_pipeline.py
+[2024-02-16 13:53:13,824] {processor.py:641} INFO - Processing file /opt/airflow/dags/test_pipeline.py for tasks to queue
+[2024-02-16 13:53:13,837] {logging_mixin.py:115} INFO - [2024-02-16 13:53:13,836] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/test_pipeline.py
+[2024-02-16 13:53:18,907] {processor.py:651} INFO - DAG(s) dict_keys(['test_pipeline']) retrieved from /opt/airflow/dags/test_pipeline.py
+[2024-02-16 13:53:19,152] {logging_mixin.py:115} INFO - [2024-02-16 13:53:19,149] {dag.py:2371} INFO - Sync 1 DAGs
+[2024-02-16 13:53:19,246] {logging_mixin.py:115} INFO - [2024-02-16 13:53:19,246] {dag.py:2919} INFO - Setting next_dagrun for test_pipeline to 2024-02-14T07:05:00+00:00, run_after=2024-02-15T07:05:00+00:00
+[2024-02-16 13:53:19,302] {processor.py:161} INFO - Processing /opt/airflow/dags/test_pipeline.py took 5.711 seconds
+[2024-02-16 13:59:37,655] {processor.py:153} INFO - Started process (PID=168) to work on /opt/airflow/dags/test_pipeline.py
+[2024-02-16 13:59:37,667] {processor.py:641} INFO - Processing file /opt/airflow/dags/test_pipeline.py for tasks to queue
+[2024-02-16 13:59:37,687] {logging_mixin.py:115} INFO - [2024-02-16 13:59:37,686] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/test_pipeline.py
+[2024-02-16 13:59:43,499] {processor.py:651} INFO - DAG(s) dict_keys(['test_pipeline']) retrieved from /opt/airflow/dags/test_pipeline.py
+[2024-02-16 13:59:44,106] {logging_mixin.py:115} INFO - [2024-02-16 13:59:44,105] {manager.py:508} INFO - Created Permission View: can read on DAG:test_pipeline
+[2024-02-16 13:59:44,140] {logging_mixin.py:115} INFO - [2024-02-16 13:59:44,139] {manager.py:508} INFO - Created Permission View: can delete on DAG:test_pipeline
+[2024-02-16 13:59:44,163] {logging_mixin.py:115} INFO - [2024-02-16 13:59:44,163] {manager.py:508} INFO - Created Permission View: can edit on DAG:test_pipeline
+[2024-02-16 13:59:44,190] {logging_mixin.py:115} INFO - [2024-02-16 13:59:44,168] {dag.py:2371} INFO - Sync 1 DAGs
+[2024-02-16 13:59:44,226] {logging_mixin.py:115} INFO - [2024-02-16 13:59:44,226] {dag.py:2390} INFO - Creating ORM DAG for test_pipeline
+[2024-02-16 13:59:44,297] {logging_mixin.py:115} INFO - [2024-02-16 13:59:44,297] {dag.py:2919} INFO - Setting next_dagrun for test_pipeline to 2024-02-14T07:05:00+00:00, run_after=2024-02-15T07:05:00+00:00
+[2024-02-16 13:59:44,362] {processor.py:161} INFO - Processing /opt/airflow/dags/test_pipeline.py took 6.721 seconds
+[2024-02-16 14:00:14,733] {processor.py:153} INFO - Started process (PID=185) to work on /opt/airflow/dags/test_pipeline.py
+[2024-02-16 14:00:14,734] {processor.py:641} INFO - Processing file /opt/airflow/dags/test_pipeline.py for tasks to queue
+[2024-02-16 14:00:14,736] {logging_mixin.py:115} INFO - [2024-02-16 14:00:14,736] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/test_pipeline.py
+[2024-02-16 14:00:15,921] {processor.py:651} INFO - DAG(s) dict_keys(['test_pipeline']) retrieved from /opt/airflow/dags/test_pipeline.py
+[2024-02-16 14:00:16,006] {logging_mixin.py:115} INFO - [2024-02-16 14:00:16,005] {dag.py:2371} INFO - Sync 1 DAGs
+[2024-02-16 14:00:16,062] {logging_mixin.py:115} INFO - [2024-02-16 14:00:16,061] {dag.py:2919} INFO - Setting next_dagrun for test_pipeline to 2024-02-14T07:05:00+00:00, run_after=2024-02-15T07:05:00+00:00
+[2024-02-16 14:00:16,098] {processor.py:161} INFO - Processing /opt/airflow/dags/test_pipeline.py took 1.378 seconds
+[2024-02-16 14:00:46,410] {processor.py:153} INFO - Started process (PID=196) to work on /opt/airflow/dags/test_pipeline.py
+[2024-02-16 14:00:46,414] {processor.py:641} INFO - Processing file /opt/airflow/dags/test_pipeline.py for tasks to queue
+[2024-02-16 14:00:46,416] {logging_mixin.py:115} INFO - [2024-02-16 14:00:46,416] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/test_pipeline.py
+[2024-02-16 14:00:47,890] {processor.py:651} INFO - DAG(s) dict_keys(['test_pipeline']) retrieved from /opt/airflow/dags/test_pipeline.py
+[2024-02-16 14:00:48,007] {logging_mixin.py:115} INFO - [2024-02-16 14:00:48,006] {dag.py:2371} INFO - Sync 1 DAGs
+[2024-02-16 14:00:48,074] {logging_mixin.py:115} INFO - [2024-02-16 14:00:48,074] {dag.py:2919} INFO - Setting next_dagrun for test_pipeline to 2024-02-14T07:05:00+00:00, run_after=2024-02-15T07:05:00+00:00
+[2024-02-16 14:00:48,098] {processor.py:161} INFO - Processing /opt/airflow/dags/test_pipeline.py took 1.717 seconds
+[2024-02-16 14:01:18,543] {processor.py:153} INFO - Started process (PID=207) to work on /opt/airflow/dags/test_pipeline.py
+[2024-02-16 14:01:18,544] {processor.py:641} INFO - Processing file /opt/airflow/dags/test_pipeline.py for tasks to queue
+[2024-02-16 14:01:18,545] {logging_mixin.py:115} INFO - [2024-02-16 14:01:18,545] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/test_pipeline.py
+[2024-02-16 14:01:19,035] {processor.py:651} INFO - DAG(s) dict_keys(['test_pipeline']) retrieved from /opt/airflow/dags/test_pipeline.py
+[2024-02-16 14:01:19,068] {logging_mixin.py:115} INFO - [2024-02-16 14:01:19,067] {dag.py:2371} INFO - Sync 1 DAGs
+[2024-02-16 14:01:19,087] {logging_mixin.py:115} INFO - [2024-02-16 14:01:19,087] {dag.py:2919} INFO - Setting next_dagrun for test_pipeline to 2024-02-14T07:05:00+00:00, run_after=2024-02-15T07:05:00+00:00
+[2024-02-16 14:01:19,099] {processor.py:161} INFO - Processing /opt/airflow/dags/test_pipeline.py took 0.560 seconds
+[2024-02-16 14:01:49,989] {processor.py:153} INFO - Started process (PID=218) to work on /opt/airflow/dags/test_pipeline.py
+[2024-02-16 14:01:49,990] {processor.py:641} INFO - Processing file /opt/airflow/dags/test_pipeline.py for tasks to queue
+[2024-02-16 14:01:49,991] {logging_mixin.py:115} INFO - [2024-02-16 14:01:49,991] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/test_pipeline.py
+[2024-02-16 14:01:50,485] {processor.py:651} INFO - DAG(s) dict_keys(['test_pipeline']) retrieved from /opt/airflow/dags/test_pipeline.py
+[2024-02-16 14:01:50,524] {logging_mixin.py:115} INFO - [2024-02-16 14:01:50,523] {dag.py:2371} INFO - Sync 1 DAGs
+[2024-02-16 14:01:50,555] {logging_mixin.py:115} INFO - [2024-02-16 14:01:50,555] {dag.py:2919} INFO - Setting next_dagrun for test_pipeline to 2024-02-14T07:05:00+00:00, run_after=2024-02-15T07:05:00+00:00
+[2024-02-16 14:01:50,567] {processor.py:161} INFO - Processing /opt/airflow/dags/test_pipeline.py took 0.586 seconds
