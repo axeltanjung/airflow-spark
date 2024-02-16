@@ -15,5 +15,5 @@ with DAG(
     create_pet_table = PostgresOperator(
         task_id="create_pet_table",
         postgres_conn_id="postgres_default",
-        sql="/opt/airflow/dags/sql/pet/list_pet.sql",
+        sql="sql/pet/list_pet.sql",
     )
