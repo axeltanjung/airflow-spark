@@ -1,7 +1,7 @@
 version: '3'
 x-airflow-common:
   &airflow-common
-  image: apache/airflow:2.3.0
+  image: airflow:2.3.0
   environment:
     - AIRFLOW__CORE__EXECUTOR=LocalExecutor
     - AIRFLOW__CORE__SQL_ALCHEMY_CONN=postgresql+psycopg2://postgres:postgres@postgres:5432/airflow
@@ -14,7 +14,6 @@ x-airflow-common:
     - ./output:/opt/airflow/output
     - ./airflow-data/logs:/opt/airflow/logs
     - ./airflow-data/plugins:/opt/airflow/plugins
-    - ./airflow-data/airflow.cfg:/opt/airlfow/airflow.cfg
   depends_on:
     - postgres
 
@@ -26,8 +25,14 @@ services:
       - POSTGRES_PASSWORD=postgres
       - POSTGRES_DB=airflow
       - POSTGRES_PORT=5432
+    healthcheck:
+      test: ["CMD", "pg_isready", "-U", "postgres"]
+      interval: 5s
+      retries: 5
     ports:
       - "5432:5432"
+    networks:
+      - airflow-spark
 
   airflow-init:
     << : *airflow-common
@@ -35,15 +40,20 @@ services:
     entrypoint: /bin/bash
     command:
       - -c
-      - airflow users list || ( airflow db init &&
+      - airflow db init &&
         airflow users create
           --role Admin
           --username airflow
           --password airflow
           --email airflow@airflow.com
           --firstname airflow
-          --lastname airflow )
+          --lastname airflow
     restart: on-failure
+    depends_on:
+      postgres:
+        condition: service_healthy
+    networks:
+      - airflow-spark
 
   airflow-webserver:
     << : *airflow-common
@@ -51,10 +61,24 @@ services:
     ports:
       - 8080:8080
     container_name: airflow_webserver
+    depends_on:
+      airflow-init:
+        condition: service_completed_successfully
     restart: always
+    networks:
+      - airflow-spark
 
   airflow-scheduler:
     << : *airflow-common
     command: airflow scheduler
     container_name: airflow_scheduler
+    depends_on:
+      airflow-init:
+        condition: service_completed_successfully
     restart: always
+    networks:
+      - airflow-spark
+
+networks:
+  airflow-spark:
+    name: airflow-spark
