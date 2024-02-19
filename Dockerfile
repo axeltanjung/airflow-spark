@@ -8,7 +8,7 @@ RUN apt update && \
     apt-get clean;
 
 # Set JAVA_HOME
-# For AMD archtecture : 
+# For AMD archtecture :
 # ENV JAVA_HOME /usr/lib/jvm/java-11-openjdk-amd4
 ENV JAVA_HOME /usr/lib/jvm/java-11-openjdk-arm64
 RUN export JAVA_HOME
